@@ -16,11 +16,20 @@
       padding: 0;
     }
 
+    /* Header */
     header {
-      background: linear-gradient(to right, #ff7e5f, #feb47b); /* sunset gradient */
+      background: linear-gradient(to right, #ff7e5f, #feb47b);
       color: white;
-      padding: 30px;
       text-align: center;
+      padding: 50px 20px;
+    }
+
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid white;
+      margin-bottom: 15px;
     }
 
     header h1 {
@@ -28,21 +37,51 @@
       font-size: 2.5em;
     }
 
+    header p {
+      font-size: 1.2em;
+    }
+
+    /* Navegación */
+    nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 0;
+      list-style: none;
+      margin: 20px 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #ff7e5f;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Secciones */
     section {
       max-width: 1000px;
       margin: 40px auto;
-      padding: 20px;
+      padding: 30px;
+      background-color: #fff7f0;
+      border-radius: 20px;
     }
 
     section h2 {
       color: #ff7e5f;
       margin-bottom: 20px;
+      text-align: center;
     }
 
+    /* Cards */
     .projects-container {
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
+      justify-content: center;
     }
 
     .project-card {
@@ -51,6 +90,7 @@
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       padding: 20px;
       flex: 1 1 300px;
+      max-width: 300px;
     }
 
     .project-card img {
@@ -76,26 +116,53 @@
     ul {
       list-style: square inside;
       line-height: 1.6;
+      padding-left: 15px;
     }
 
     p {
       line-height: 1.5;
     }
 
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #ff7e5f;
+      color: white;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Portfolio de proyecctos</h1>
-  <p>Analista de Datos | Proyectos Bootcamp & proyectos personales</p>
+  <img src="foto_perfil.jpg" alt="Pam" class="profile-pic">
+  <h1>Pam</h1>
+  <p>Analista de Datos | Proyectos Bootcamp & Mini proyectos</p>
 </header>
+
+<nav>
+  <ul>
+    <li><a href="#bootcamp">Bootcamp</a></li>
+    <li><a href="#mini">Mini proyecto</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+</nav>
 
 <!-- Sección Bootcamp -->
 <section id="bootcamp">
   <h2>Proyectos Bootcamp</h2>
   <div class="projects-container">
-
     <div class="project-card">
       <h3>Análisis de servicio de taxis</h3>
       <img src="grafico_taxis.png" alt="Gráficos de servicio de taxis">
@@ -127,15 +194,13 @@
       <p>Herramientas: Python, pandas, matplotlib, Seaborn</p>
       <a href="https://github.com/pamela25bio/Analisis-de-venta-de-vehiculos">Ver código en GitHub</a>
     </div>
-
   </div>
 </section>
 
 <!-- Sección Mini proyecto -->
 <section id="mini">
-  <h2>Proyecto HealthTech</h2>
+  <h2>Mini Proyecto HealthTech</h2>
   <div class="projects-container">
-
     <div class="project-card">
       <h3>Monkeypox - Análisis de casos globales</h3>
       <img src="Paises con más casos de viruela del mono.png" alt="Distribución por país">
@@ -148,11 +213,23 @@
         <li>inclinandose a la población de adultos jóvenes, con un mayor contagio</li>
         <li> a finales de verano y principios de invierno.</li>
       </ul>
+
       <a href="#">Ver notebook completo (opcional)</a>
     </div>
-
   </div>
 </section>
+
+<!-- Sección Contacto -->
+<section id="contacto">
+  <h2>Contacto</h2>
+  <p>Email: pam@email.com</p>
+  <p>LinkedIn: <a href="#">linkedin.com/in/pam</a></p>
+  <p>GitHub: <a href="#">github.com/pamela25bio</a></p>
+</section>
+
+<footer>
+  <p>© 2025 Pam | Analista de Datos</p>
+</footer>
 
 </body>
 </html>
