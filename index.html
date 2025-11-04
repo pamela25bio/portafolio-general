@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio de Pam</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: linear-gradient(to right, #ff7e5f, #feb47b); /* sunset gradient */
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    section h2 {
+      color: #ff7e5f;
+      margin-bottom: 20px;
+    }
+
+    .projects-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .project-card {
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      flex: 1 1 300px;
+    }
+
+    .project-card img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin: 10px 0;
+    }
+
+    .project-card h3 {
+      margin-top: 0;
+      color: #ff7e5f;
+    }
+
+    .project-card a {
+      color: #ff7e5f;
+      text-decoration: none;
+    }
+
+    .project-card a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      list-style: square inside;
+      line-height: 1.6;
+    }
+
+    p {
+      line-height: 1.5;
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Portfolio de Pam</h1>
+  <p>Analista de Datos | Proyectos Bootcamp & Mini proyectos</p>
+</header>
+
+<!-- Sección Bootcamp -->
+<section id="bootcamp">
+  <h2>Proyectos Bootcamp</h2>
+  <div class="projects-container">
+
+    <div class="project-card">
+      <h3>Análisis de servicio de taxis</h3>
+      <img src="grafico_taxis.png" alt="Gráficos de servicio de taxis">
+      <p>Análisis del servicio de taxis, patrones de uso y satisfacción de clientes.</p>
+      <p>Herramientas: Python, pandas, matplotlib, Jupyter Notebook</p>
+      <a href="https://github.com/pamela25bio/Project-Taxi-Data-Analysis">Ver código en GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Análisis de retención de clientes en gimnasio</h3>
+      <img src="grafico_gym.png" alt="Gráficos gimnasio">
+      <p>Estudio de retención de clientes, tendencias de asistencia y estrategias de fidelización.</p>
+      <p>Herramientas: Python, pandas, matplotlib, Seaborn</p>
+      <a href="https://github.com/pamela25bio/Project-Gym-analysis">Ver código en GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Análisis de ventas de videojuegos</h3>
+      <img src="grafico_videojuegos.png" alt="Gráficos videojuegos">
+      <p>Exploración de ventas históricas, plataformas más exitosas y factores de éxito de juegos.</p>
+      <p>Herramientas: Python, pandas, matplotlib, Seaborn</p>
+      <a href="https://github.com/pamela25bio/Analysis-of-videogames-sales">Ver código en GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Análisis de ventas de vehículos</h3>
+      <img src="grafico_vehiculos.png" alt="Gráficos ventas vehículos">
+      <p>Análisis de ventas de vehículos por tipo, región y tendencias de mercado.</p>
+      <p>Herramientas: Python, pandas, matplotlib, Seaborn</p>
+      <a href="https://github.com/pamela25bio/Analisis-de-venta-de-vehiculos">Ver código en GitHub</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- Sección Mini proyecto -->
+<section id="mini">
+  <h2>Mini Proyecto HealthTech</h2>
+  <div class="projects-container">
+
+    <div class="project-card">
+      <h3>Monkeypox - Análisis de casos globales</h3>
+      <img src="grafico_evolucion.png" alt="Evolución temporal de casos">
+      <img src="grafico_paises.png" alt="Distribución por país">
+      <img src="grafico_edad.png" alt="Distribución por edad">
+      <p>Mini proyecto que analiza la evolución temporal, distribución geográfica y rango de edad de casos de Monkeypox.</p>
+      <p>Herramientas: Python, pandas, matplotlib, NumPy, Jupyter Notebook</p>
+      <ul>
+        <li>España, Estados Unidos y Alemania son los países con más casos.</li>
+        <li>La mayoría de los casos corresponden a adultos jóvenes.</li>
+        <li>La evolución temporal muestra picos claros, suavizados con media móvil de 7 días.</li>
+      </ul>
+      <a href="#">Ver notebook completo (opcional)</a>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>
